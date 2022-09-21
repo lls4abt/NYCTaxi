@@ -28,16 +28,16 @@ In order to prove or disprove our hypothesis about taxi pickups during rush hour
 
 ## Figures
 ### 1. PrelimAnalysisFig1:
-
+This bar graph compares the number of taxi rides per day in NYC on weekdays versus the weekend. 
 
 ### 2. PrelimAnalysisFig2:
-
+This bar graph shows average hourly taxi rides on weekdays in NYC.
 
 ### 3. PrelimAnalysisFig3:
-
+This bar graph shows average hourly taxi rides on weekends in NYC.
 
 ### 4. Data flowchart:
-
+A graphic that demonstrates our analysis plan and our next steps, drawn up as of completing MI2.
 
 ## References
 
