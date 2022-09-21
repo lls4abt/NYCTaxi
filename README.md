@@ -27,11 +27,14 @@ DATA folder: https://github.com/lls4abt/NYCTaxi/blob/main/DATA/Data_Dictionaries
 In order to prove or disprove our hypothesis about taxi pickups during rush hour and non rush hour in New York City, we needed to find a data set with variables that would allow us to test it. We found a data set on Kaggle that included taxi pickup times for dates in July 2021. We assume this data is only a sample of the full population of taxi rides in July 2021 in New York City due to the fact that the maximum average number of pickups for a specific hour is only about 200 pickups whereas there are thousands of taxis in New York City. From our initial data visualization exercises, we did found a large difference between the number of taxi rides during the day vs. during the night as expected; however, we found the difference in taxi pickups during the day hours to be much more even than expected. During the day, we predicted there to be much less pickups during non rush hour hours in comparison to rush hour hours. This might indicate that our hypothesis is false, but we would want to run a statistical analysis to be certain. Understanding the validity of our hypothesis will help us understand if rush hour traffic in NYC is still prominent or if it is a thing of the past. 
 
 ## Figures
-### PrelimFigure1:
+### PrelimAnalysisFig1:
 
-### PrelimFigure2:
 
-### PrelimFigure3: 
+### PrelimAnalysisFig2:
+
+
+### PrelimAnalysisFig3:
+
 
 ## References
 
