@@ -33,11 +33,10 @@ In order to prove or disprove our hypothesis about taxi pickups during rush hour
 ### Prepatory Assignments: 
 <a href="https://github.com/lls4abt/NYCTaxi/files/9620518/MI1.Hypothesis.pdf">M1: Hypothesis</a> <br>
 <a href="https://github.com/lls4abt/NYCTaxi/files/9620517/M2.pdf">M2: Establish Data</a>
-<br>
-<br>
 
 ### Acknowledgements: 
-
+Thanks to Professor Alonzi for his guidance, wisdom, and inspiration and thanks to Harsh for his expertise each step of the way. 
+The biggest shoutout to Mayor Bloomberg for the gracious time and effort he put in to promoting NYC Open Data. 
 
 ### References: 
 [1] H. Law, “Safety Tips for rush hour traffic,” Heintz Law, 19-Dec-2019. [Online]. Available: https://www.heintzlaw.com/tips-for-rush-hour-traffic/. [Accessed: 09-Sep-2022]. <br>
