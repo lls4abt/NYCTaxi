@@ -17,6 +17,7 @@ We obtained the data for our project from Kaggle, but the data itself was orgini
 
 ### Data File:
 <a href="https://github.com/lls4abt/NYCTaxi/blob/main/DATA/taxi_tripdata.csv">DATA folder: </a>
+
 <a href="https://www.kaggle.com/datasets/anandaramg/taxi-trip-data-nyc?resource=download&select=taxi_tripdata.csv">Kaggle link: </a>
 
 ### Data Dictionary:
