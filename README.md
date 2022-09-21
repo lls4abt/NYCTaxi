@@ -5,10 +5,10 @@ During the weekdays of July 2021 in New York City, the average amount of taxi pi
 
 ## SRC
 ### Installing/Building Code:
-to put our stuff here
+Run this program using R...
 
 ### Using Code:
-to put our stuff here
+First, download the data (CSV) to your personal computer, as the data will come from your personal directory.
 
 ## DATA
 ### Data Collection Process:
