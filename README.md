@@ -16,9 +16,9 @@ First, download the data (CSV) to your personal computer, as the data will come 
 We obtained the data for our project from Kaggle, but the data itself was orginially sourced from NYCData. Records of the taxi ride information was provided by Creative Mobile Technologies, LLC and VeriFone Inc, payment systems used by Yellow Cabs and Ubers in NYC.
 
 ### Data File:
-<a href="https://github.com/lls4abt/NYCTaxi/blob/main/DATA/taxi_tripdata.csv">DATA folder: </a>
+<a href="https://github.com/lls4abt/NYCTaxi/blob/main/DATA/taxi_tripdata.csv">DATA folder</a>
 
-<a href="https://www.kaggle.com/datasets/anandaramg/taxi-trip-data-nyc?resource=download&select=taxi_tripdata.csv">Kaggle link: </a>
+<a href="https://www.kaggle.com/datasets/anandaramg/taxi-trip-data-nyc?resource=download&select=taxi_tripdata.csv">Kaggle link</a>
 
 ### Data Dictionary:
 DATA folder: https://github.com/lls4abt/NYCTaxi/blob/main/DATA/Data_Dictionaries_&_User_Guide.pdf
