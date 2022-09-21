@@ -27,9 +27,9 @@ In order to prove or disprove our hypothesis about taxi pickups during rush hour
 ## Figures
 
 ## References
-[1] H. Law, “Safety Tips for rush hour traffic,” Heintz Law, 19-Dec-2019. [Online]. Available: https://www.heintzlaw.com/tips-for-rush-hour-traffic/. [Accessed: 09-Sep-2022]. 
-[2] J. S. Russell, “Can Rush Hour Be Banished?,” Bloomberg, 25-Aug-2021. [Online]. Available: https://www.bloomberg.com/news/articles/2021-08-25/despite-remote-work-rush-hour-returned. [Accessed: 07-Sep-2022]. 
-[3] NYC Taxi & Limousine Commission, “TLC Trip Record Data.”[Online]. Available: https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page. [Accessed: 14-Sep-2022]. 
+[1] H. Law, “Safety Tips for rush hour traffic,” Heintz Law, 19-Dec-2019. [Online]. Available: https://www.heintzlaw.com/tips-for-rush-hour-traffic/. [Accessed: 09-Sep-2022]. <br>
+[2] J. S. Russell, “Can Rush Hour Be Banished?,” Bloomberg, 25-Aug-2021. [Online]. Available: https://www.bloomberg.com/news/articles/2021-08-25/despite-remote-work-rush-hour-returned. [Accessed: 07-Sep-2022]. <br>
+[3] NYC Taxi & Limousine Commission, “TLC Trip Record Data.”[Online]. Available: https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page. [Accessed: 14-Sep-2022]. <br>
 
 ### Prepatory Assignments : 
 <a href="https://github.com/lls4abt/NYCTaxi/files/9620518/MI1.Hypothesis.pdf">M1: Hypothesis</a> <br>
