@@ -28,6 +28,6 @@ In order to prove or disprove our hypothesis about taxi pickups during rush hour
 
 ## References
 
-## Prepatory Assignments  
+### Prepatory Assignments  
 <a href="https://github.com/lls4abt/NYCTaxi/files/9620518/MI1.Hypothesis.pdf">M1: Hypothesis</a> <br>
 <a href="https://github.com/lls4abt/NYCTaxi/files/9620517/M2.pdf">M2: Establish Data</a>
