@@ -35,7 +35,7 @@ In order to prove or disprove our hypothesis about taxi pickups during rush hour
 <a href="https://github.com/lls4abt/NYCTaxi/files/9620517/M2.pdf">M2: Establish Data</a>
 
 ### Acknowledgements: 
-Thanks to Professor Alonzi for his guidance, wisdom, and inspiration and thanks to Harsh for his expertise each step of the way. 
+Thanks to Professor Alonzi for his guidance, wisdom, and inspiration and thanks to Harsh for his expertise each step of the way. <br>
 The biggest shoutout to Mayor Bloomberg for the gracious time and effort he put in to promoting NYC Open Data. 
 
 ### References: 
