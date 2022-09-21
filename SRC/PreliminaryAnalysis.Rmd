@@ -1,0 +1,111 @@
+---
+title: "PreliminaryAnalysis"
+author: "Teagan Norrgard, trn8cwf"
+date: "8/31/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(ggplot2)
+library(tidyr)
+library(tidyverse)
+library(dplyr)
+library(lubridate)
+```
+
+
+```{r}
+taxi <- read.csv('/Users/teagannorrgard/Downloads/archive 2/taxi_tripdata.csv')
+
+## converting times from character to datetime format
+taxi$pickup_datetime = strptime(taxi$lpep_pickup_datetime, format = "%Y-%m-%d %H:%M:%OS", tz = "EST")
+taxi$dropoff_datetime = strptime(taxi$lpep_dropoff_datetime, format = "%Y-%m-%d %H:%M:%OS", tz = "EST")
+```
+
+
+```{r}
+## also making just a date column so i can easily separate by date, maybe make time separate later if needed
+## some rides span over 2 dates (if midnight occurs between pickup and dropoff), so i am using pick up time to determine date
+
+taxi$date <- as.Date(taxi$lpep_pickup_datetime)
+
+table(taxi$date)
+```
+based on this table, looks like we can take all dates from  7-01-21 to 7-31-21
+
+weekends: 3,4    10,11    17,18    24,25   31
+
+
+```{r}
+## making column for day of week - 1=sunday, 2=monday,  ... 7=saturday
+
+taxi$weekday <- wday(taxi$date)
+```
+
+
+```{r}
+# filtering data to only include taxis from July 2021
+taxi <- taxi %>% 
+  filter(between(date, as.Date('2021-07-01'), as.Date('2021-07-31')))
+
+# creating new df for plot, only using date, frequency, and day of week
+datecount <- as.data.frame(table(taxi$date))
+datecount$weekday <- wday(datecount$Var1)
+datecount$weekday <- as.factor(datecount$weekday)
+
+# changing day of week to weekday or weekend
+datecount <- datecount %>% 
+  mutate(weekend_or_weekday = if_else(weekday == 1 | weekday == 7, 'weekend', 'weekday'))
+
+# creating plot of total number of taxi rides per day
+ggplot(datecount, aes(x = Var1, y=Freq, fill=weekend_or_weekday)) + 
+  geom_bar(stat='identity') + 
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))  + 
+  ggtitle('Number of Taxi Rides per Day in NYC') +
+  xlab('Date')  +
+  ylab('# Taxis')
+
+```
+
+
+```{r}
+# making new column of just the hour of pickup times
+taxi$hour <- format(as.POSIXct(taxi$pickup_datetime,format="%H:%M:%S"),"%H")
+hourly <- as.data.frame(table(taxi$hour))
+
+# specifying which day of the week numbers mean weekday/weekend
+weekend <- taxi %>%
+  filter(weekday == 1 | weekday == 7)
+weekday <- taxi %>%
+  filter(weekday == 2 | weekday == 3 | weekday == 4 | weekday == 5 | weekday == 6)
+
+# creating new df for weekdays only, averaging number of taxis per hour
+weekday_by_hour <- as.data.frame(table(weekday$hour))
+weekday_by_hour <- weekday_by_hour %>%
+  mutate(avg_freq = Freq / 22)
+
+# creating new df for weekends only, averaging number of taxis per hour
+weekend_by_hour <- as.data.frame(table(weekend$hour))
+weekend_by_hour <- weekend_by_hour %>%
+  mutate(avg_freq = Freq / 9)
+
+# creating plot of average number of taxis per hour on weekdays
+ggplot(weekday_by_hour, aes(x = Var1, y=avg_freq, fill=avg_freq)) + 
+  geom_bar(stat='identity') + 
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))  + 
+  ggtitle('Average Number of Taxi Rides per Hour in NYC on Weekdays') +
+  xlab('Hour')  +
+  ylab('# Taxis')
+
+# creating plot of average number of taxis per hour on weekdays
+ggplot(weekend_by_hour, aes(x = Var1, y=avg_freq, fill=avg_freq)) + 
+  geom_bar(stat='identity') + 
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))  + 
+  ggtitle('Average Number of Taxi Rides per Hour in NYC on Weekends') +
+  xlab('Hour')  +
+  ylab('# Taxis')
+```
