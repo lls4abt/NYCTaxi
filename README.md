@@ -8,10 +8,10 @@ During the weekdays of July 2021 in New York City, the average amount of taxi pi
 We obtained the data for our project from Kaggle, but the data itself was orginially sourced from NYCData. Records of the taxi ride information was provided by Creative Mobile Technologies, LLC and VeriFone Inc, payment systems used by Yellow Cabs and Ubers in NYC.
 
 ## Data File
-https://github.com/lls4abt/NYCTaxi/blob/main/taxi_tripdata.csv
+https://github.com/lls4abt/NYCTaxi/blob/DATA/taxi_tripdata.csv
 
 ## Data Dictionary
-https://github.com/lls4abt/NYCTaxi/blob/main/trip_data_dictionary.pdf
+https://github.com/lls4abt/NYCTaxi/blob/DATA/trip_data_dictionary.pdf
 
 
 ## Data Context Narrative
