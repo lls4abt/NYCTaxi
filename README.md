@@ -54,6 +54,16 @@ This bar graph shows average hourly taxi rides on weekends in NYC.
 ### 4. Data flowchart:
 A graphic that demonstrates our analysis plan and our next steps, drawn up as of completing MI2.
 
+### 5. AnalysisPlot1:
+This set of histograms shows the distribution of average rush hour pickups and average non rush hour pickups per day. This plot was used to see if the distributions were normal or not to decide if a parametirc or non parametric test should be used for further statistical analysis. 
+
+### 6. AnalysisPlot2:
+This histogram shows the distribution of the ratios of average rush hour pickups to average non rush hour pickups per day. This plot was used to see if the distribution was normal or not to decide if a parametirc or non parametric test should be used for further statistical analysis.
+
+### 7. AnalysisPlot3:
+This plot compares the means and medians for average pickups per hour for non rush hour hours and rush hour hours. 
+
+
 ## References
 
 ### Prepatory Assignments: 
